@@ -1,0 +1,258 @@
+//====================================================================================================
+.header {
+	// background: url(/img/Fon-header.jpg) 0 0/100% auto no-repeat;
+	background: url(/img/Fon-header.jpg) no-repeat;
+	max-width: 100%;
+	display: block;
+	//background-position: center 50%;
+	min-height: 1161px;
+
+	@media (max-width: 1123px) {
+		background: url(/img/Fon-header.jpg) 50% no-repeat;
+	}
+	@media (max-width: 992px) {
+		background: url(/img/Fon-header.jpg) 50% no-repeat;
+	}
+	@media (max-width: 777px) {
+		min-height: 700px;
+	}
+
+	// .header__row
+
+	&__top {
+		padding: 30px 0px 246px 0px;
+		display: flex;
+		justify-content: space-between;
+		position: static;
+		flex-wrap: wrap;
+		@media (max-width: 777px) {
+			padding: 30px 0px 100px 0px;
+		}
+		@media (max-width: 380px) {
+			padding: 30px 0px 55px 0px;
+		}
+	}
+
+	&__body {
+		padding: 0;
+		display: block;
+		justify-content: none;
+		position: static;
+	}
+
+	// .header__links
+
+	&__links {
+		display: flex;
+		justify-content: space-between;
+		min-width: 245px;
+		@media (max-width: 585px) {
+			padding: 0px 0px 25px 0px;
+		}
+		@media (max-width: 425px) {
+			margin: 0 auto;
+		}
+	}
+
+	// .header__link
+
+	&__link {
+		font-size: 14px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		font-family: "Roboto-Medium", sans-serif;
+		color: #505f98;
+		transition-duration: 1s;
+	}
+
+	&__link:hover {
+		color: #111b47;
+		transition-duration: 0.5s;
+	}
+
+	// .header__logo
+
+	&__logo {
+		font-size: 26px;
+		font-weight: Bold;
+		color: #37447e;
+		@media (max-width: 685px) {
+			min-width: 160px;
+			text-align: center;
+		}
+		@media (max-width: 585px) {
+			padding: 0px 0px 25px 0px;
+		}
+		@media (max-width: 425px) {
+			padding: 0;
+			line-height: 30px;
+		}
+		@media (max-width: 380px) {
+			padding: 0px 0px 25px 0px;
+			margin: 0 auto;
+		}
+	}
+
+	&__logo:hover {
+	}
+
+	// .header__button
+
+	&__button {
+		min-width: 160px;
+		background-color: #111b47;
+		border-radius: 2px;
+		min-height: 26px;
+		display: flex;
+		justify-content: center;
+		transition-duration: 1s;
+		@media (max-width: 585px) {
+			min-width: 245px;
+			min-height: 30px;
+		}
+		@media (max-width: 425px) {
+			min-width: 200px !important;
+			max-height: 30px;
+		}
+		@media (max-width: 380px) {
+			margin: 0 auto;
+		}
+	}
+
+	&__button:hover {
+		box-shadow: 6px 6px #989898, 12px 12px #111b47;
+		transition-duration: 0.5s;
+	}
+
+	// .header__button-text
+
+	&__button-text {
+		color: white;
+		font-size: 14px;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+}
+
+.product {
+	// padding: 246px 0px 0px 0px;
+	min-height: calc(420px + (421 - 420) * (100vw / 1112));
+	max-width: 539px;
+	//min-height: 421px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	// .product__heading
+
+	&__heading {
+		font-size: calc(30px + (50 - 30) * (100vw / 1112));
+		line-height: 58px;
+		@media (max-width: 585px) {
+			text-align: center;
+		}
+	}
+
+	// .product__text
+
+	&__text {
+		font-size: calc(14px + (18 - 14) * (100vw / 1112));
+		line-height: 29px;
+		color: #505f98;
+		min-height: 164px;
+		@media (max-width: 1800px) {
+			margin: 20px 0px;
+		}
+		@media (max-width: 1300px) {
+			margin: 0px 0px;
+		}
+		@media (max-width: 585px) {
+			text-align: center;
+		}
+	}
+
+	// .product__buttons
+
+	&__buttons {
+		display: flex;
+		justify-content: space-between;
+		max-width: 404px;
+		@media (max-width: 585px) {
+			justify-content: space-around;
+			max-width: 100%;
+		}
+		@media (max-width: 430px) {
+			flex-direction: column;
+		}
+	}
+
+	// .product__button
+
+	&__button {
+		min-width: 189px;
+		background-color: #111b47;
+		border-radius: 2px;
+		min-height: 36px;
+		display: flex;
+		justify-content: center;
+		transition-duration: 1s;
+		@media (max-width: 585px) {
+		}
+		@media (max-width: 430px) {
+			margin: 10px 0px 10px 0px;
+		}
+	}
+
+	&__button:hover {
+		box-shadow: 6px 6px #989898, 12px 12px #111b47;
+		transition-duration: 0.5s;
+	}
+
+	// .header__button-text
+
+	&__button-text {
+		color: white;
+		font-size: 16px;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	// .product__button-learn
+
+	&__button-learn {
+		background: rgba(0, 0, 0, 00);
+		border: 3px solid #111b47;
+	}
+
+	&__button-text-learn {
+		color: #111b47;
+	}
+}
+
+//====================================================================================================
+/*
+	Стиль иконки бургера
+	.icon-menu{
+		display: block;
+		position: absolute;
+		top: 18px;
+		right: 10px;
+		width:30px;
+		height: 18px;
+		cursor: pointer;
+		z-index: 5;
+		span{@include anim(0.3s,0s);top: 8px;left: 0px;position: absolute;width: 100%;height: 2px;background-color: #000;
+			&:first-child{top: 0px;}
+			&:last-child{top: auto;bottom: 0px;}
+		}
+		&.active{
+			span{@include scale(0);
+				&:first-child{@include rotate(-45deg);top: 8px;}
+				&:last-child{@include rotate(45deg);bottom: 8px;}
+			}
+		}
+	}
+*/
