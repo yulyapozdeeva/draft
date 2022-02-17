@@ -721,16 +721,16 @@ body.ie .ibg img {
   right: 0; }
 
 .header {
-  background: url(/img/Fon-header.jpg) no-repeat;
+  background: url(../img/Fon-header.jpg) no-repeat;
   max-width: 100%;
   display: block;
   min-height: 1161px; }
   @media (max-width: 1123px) {
     .header {
-      background: url(/img/Fon-header.jpg) 50% no-repeat; } }
+      background: url(../img/Fon-header.jpg) 50% no-repeat; } }
   @media (max-width: 992px) {
     .header {
-      background: url(/img/Fon-header.jpg) 50% no-repeat; } }
+      background: url(../img/Fon-header.jpg) 50% no-repeat; } }
   @media (max-width: 777px) {
     .header {
       min-height: 700px; } }
