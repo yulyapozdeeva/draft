@@ -1,17 +1,17 @@
 //====================================================================================================
 .header {
 	// background: url(/img/Fon-header.jpg) 0 0/100% auto no-repeat;
-	background: url(img/fon-header.jpg) no-repeat;
+	background: url(../img/fonheader.jpg) no-repeat;
 	max-width: 100%;
 	display: block;
 	//background-position: center 50%;
 	min-height: 1161px;
 
 	@media (max-width: 1123px) {
-		background: url(img/fon-header.jpg) 50% no-repeat;
+		background: url(../img/fonheader.jpg) 50% no-repeat;
 	}
 	@media (max-width: 992px) {
-		background: url(../img/fon-header.jpg) 50% no-repeat;
+		background: url(../img/fonheader.jpg) 50% no-repeat;
 	}
 	@media (max-width: 777px) {
 		min-height: 700px;
