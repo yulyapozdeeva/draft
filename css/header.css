@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .header {
-  background: url(../img/fonheader.jpg) no-repeat;
+  background: url(../img/fonheader.jpg) 0 0/cover no-repeat;
   max-width: 100%;
   display: block;
   min-height: 1161px;

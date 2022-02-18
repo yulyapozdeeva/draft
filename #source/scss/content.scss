@@ -221,7 +221,8 @@
 }
 
 .price {
-	background: url(../img/Rectangle.jpg);
+	background: url(../img/Rectangle.jpg) 0 0/cover no-repeat;;
+	max-width: 100%;
 	min-height: 779px;
 
 	// .price__body
