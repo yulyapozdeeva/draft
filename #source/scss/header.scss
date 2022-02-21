@@ -1,7 +1,19 @@
 //====================================================================================================
+
+._anim-show {
+	transform: translate(0px, 120%);
+	opacity: 0;
+	transition: all 0.8s ease 0s;
+}
+._anim-show._active,
+._active ._anim-show {
+	opacity: 1;
+	transform: translate(0px, 0px);
+}
+
 .header {
 	// background: url(/img/Fon-header.jpg) 0 0/100% auto no-repeat;
-	background: url(../img/fonheader.jpg) 0 0/ cover no-repeat;
+	background: url(../img/fonheader.jpg) 0 0 / cover no-repeat;
 	max-width: 100%;
 	display: block;
 	//background-position: center 50%;
@@ -136,6 +148,12 @@
 	}
 }
 
+._anim-show {
+	transform: translate(0px, 120%);
+	opacity: 0;
+	transition: all 0.8s ease 0s;
+}
+
 .product {
 	// padding: 246px 0px 0px 0px;
 	min-height: calc(420px + (421 - 420) * (100vw / 1112));
@@ -150,18 +168,30 @@
 	&__heading {
 		font-size: calc(30px + (50 - 30) * (100vw / 1112));
 		line-height: 58px;
+		min-width: 700px;
+		@media(max-width: 1220px){
+			min-width: 539px;
+		}
 		@media (max-width: 585px) {
 			text-align: center;
+			min-width: 300px;
 		}
 	}
 
-	// .product__text
+	&__heading {
+		transform: translate(0px, 120%);
+		opacity: 0;
+		transition: all 0.8s ease 0s;
+	}
 
 	&__text {
 		font-size: calc(14px + (18 - 14) * (100vw / 1112));
 		line-height: 29px;
 		color: #505f98;
 		min-height: 164px;
+		transform: translate(0%, 0px) scale(2);
+		opacity: 0;
+		transition: all 2s ease 0s;
 		@media (max-width: 1800px) {
 			margin: 20px 0px;
 		}
@@ -172,7 +202,6 @@
 			text-align: center;
 		}
 	}
-
 	// .product__buttons
 
 	&__buttons {
@@ -232,6 +261,33 @@
 	}
 }
 
+.product__heading._active {
+	transform: translate(0px, 0px);
+	opacity: 1;
+}
+
+.product__text._active {
+	transform: translate(0px, 0px);
+	opacity: 1;
+}
+
+// @keyframes text-heading {
+// 	0% {
+// 		opacity: 0.2;
+// 	}
+// 	100% {
+
+// 	}
+// }
+
+// @keyframes text-header {
+// 	0% {
+// 		opacity: 0.2;
+// 	}
+// 	100% {
+
+// 	}
+// }
 //====================================================================================================
 /*
 	Стиль иконки бургера
