@@ -18,9 +18,20 @@
 
 	&__wrapper-img {
 		margin: 0 auto;
+		// transform: translate(-120%, 0px);
+		// opacity: 0;
+		// transition: all 0.8s ease 0s;
 	}
 
 	&__img {
+		transform: translate(120%, 0px);
+		opacity: 0;
+		transition: all 1s ease 0s;
+	}
+
+	&__img._active {
+		opacity: 1;
+		transform: translate(0px, 0px);
 	}
 
 	// .product__heading
@@ -93,12 +104,20 @@
 		flex-direction: column;
 		justify-content: space-between;
 		max-width: 235px;
+		transform: translate(0%, 0%) scale(1.5);
+		opacity: 0;
+		transition: all 1s ease 0s;
 		@media (max-width: 992px) {
 			text-align: center;
 		}
 		@media (max-width: 513px) {
 			margin: 0px 0px 25px 0px;
 		}
+	}
+
+	&__row._active {
+		transform: translate(0%, 0%);
+		opacity: 1;
 	}
 
 	// .light__icon
@@ -141,6 +160,14 @@
 	&__wrapper-img {
 		margin: 0 auto;
 		max-width: 100%;
+		transform: translate(-120%, 0px);
+		opacity: 0;
+		transition: all 1s ease 0s;
+	}
+
+	&__wrapper-img._active {
+		opacity: 1;
+		transform: translate(0px, 0px);
 	}
 
 	&__container {
@@ -241,10 +268,18 @@
 		display: flex;
 		justify-content: center;
 		transition-duration: 1s;
+		transform: translate(0%, -120%) scale(1.2);
+		opacity: 0;
+		transition: all 1s ease 0s;
 		@media (max-width: 1125px) {
 			margin: 0 auto;
 			min-width: 150px;
 		}
+	}
+
+	&__button._active {
+		opacity: 1;
+		transform: translate(0px, 0px);
 	}
 
 	&__button:hover {
@@ -380,10 +415,20 @@
 		justify-content: center;
 		transition-duration: 1s;
 		margin: 0 auto;
+		transform: translate(0%, 120%) scale(1.2);
+		opacity: 0;
+		transition: all 1s ease 0s;	transform: translate(0%, 120%) scale(1.2);
+		opacity: 0;
+		transition: all 1s ease 0s;
 		@media (max-width: 1125px) {
 			margin: 0 auto;
 			min-width: 150px;
 		}
+	}
+
+	&__button._active {
+		transform: translate(0px, 0px);
+		opacity: 1;
 	}
 
 	&__button:hover {

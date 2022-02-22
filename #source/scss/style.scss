@@ -17,91 +17,26 @@ $fontfamily: "Roboto";
 //</Шрифт по умолчанию>==========================================================================================
 
 //</ШРИФТЫ>=======================================================================================================
-
-.slide-left {
-	animation-name: slide-left;
-	animation-duration: 2s;
-	animation-timing-function: ease-in-out;
-	visibility: visible !important;
+::-webkit-scrollbar {
+	width: 17px;
+	/* ширина нового скроллбара */
 }
 
-@keyframes slide-left {
-	0% {
-		transform: translateX(150%);
-	}
-	// 50% {
-	// 	transform: translateX(-8%);
-	// }
-	// 65% {
-	// 	transform: translateX(4%);
-	// }
-	80% {
-		transform: translateX(-4%);
-	}
-	// 95% {
-	// 	transform: translateX(2%);
-	// }
-	100% {
-		transform: translateX(0%);
-	}
+::-webkit-scrollbar-track {
+	background: #cdd0f5; /* цвет фона у дорожки */
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.2) inset; /* тень у дорожки */
 }
 
-.slide-right {
-	animation-name: slide-right;
-	animation-duration: 2s;
-	animation-timing-function: ease-in-out;
-	visibility: visible !important;
+::-webkit-scrollbar-thumb {
+	background: #7e80e4; /* цвет фона у дорожки */
+	border-radius: 8px; /* скругление углов */
+	border: 3px solid #cecdf5; /* толщина, стиль и цвет рамки */
 }
 
-@keyframes slide-right {
-	0% {
-		transform: translateX(-150%);
-	}
-	50% {
-		//transform: translateX(8%);
-	}
-	65% {
-		//transform: translateX(-4%);
-	}
-	80% {
-		transform: translateX(4%);
-	}
-	95% {
-		//transform: translateX(-2%);
-	}
-	100% {
-		transform: translateX(0%);
-	}
+::-webkit-scrollbar-thumb:hover {
+	background: #1417b9; /* ползунок меняет цвет при наведении */
 }
 
-.slide-down {
-	animation-name: slide-down;
-	animation-duration: 1s;
-	animation-timing-function: ease;
-	visibility: visible !important;
-}
-
-@keyframes slide-down {
-	0% {
-		transform: translateY(-100%);
-		opacity: 0;
-	}
-	50% {
-		transform: translateY(8%);
-	}
-	65% {
-		transform: translateY(-4%);
-	}
-	80% {
-		transform: translateY(4%);
-	}
-	95% {
-		transform: translateY(-2%);
-	}
-	100% {
-		transform: translateY(0%);
-	}
-}
 //<ПЕРЕМЕННЫЕ>===========================================================================================================
 $minwidth: 320px;
 $mw: 1112;

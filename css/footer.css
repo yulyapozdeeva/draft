@@ -169,4 +169,12 @@
 .footer__icon {
   font-size: 16px;
   color: #b0b8bc;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.footer__icon:hover {
+  color: #111b47;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
